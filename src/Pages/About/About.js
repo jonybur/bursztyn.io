@@ -15,22 +15,22 @@ export class About extends PureComponent {
               My name is Jonathan Bursztyn. I’m a Full Stack Software Engineer
               in London, UK - currently working at{" "}
               <a
-                href="https://www.rockstargames.com/"
+                href="https://aztec.network/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
               >
-                Rockstar Games
+                Aztec
               </a>
               .
             </p>
-            <p>
+            {/* <p>
               I enjoy programming and designing{" "}
               <Link to={`/${MenuOptions.PORTFOLIO}`} className={styles.link}>
                 awesome web and mobile applications
               </Link>
               , and during my spare time I indulge in photography.
-            </p>
+            </p> */}
             <p>
               If you would like to reach me, please{" "}
               <a

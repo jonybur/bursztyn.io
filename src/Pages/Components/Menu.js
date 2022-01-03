@@ -5,10 +5,10 @@ import styles from "./styles.module.css";
 export const MenuOptions = {
   ABOUT: "about",
   PHOTOGRAPHY: "photography",
-  PORTFOLIO: "portfolio",
+  // PORTFOLIO: "portfolio",
   LINKEDIN: "linkedin",
   GITHUB: "github",
-  CONTACT: "contact"
+  CONTACT: "contact",
 };
 
 export class Menu extends PureComponent {
@@ -16,11 +16,11 @@ export class Menu extends PureComponent {
     super(props);
     this.state = {
       headerActive: 0,
-      shouldRender: false
+      shouldRender: false,
     };
   }
 
-  getHeaderStatus = headerIndex => {
+  getHeaderStatus = (headerIndex) => {
     return this.state.headerActive === headerIndex ? styles.in : styles.out;
   };
 
@@ -29,7 +29,7 @@ export class Menu extends PureComponent {
       currentTab,
       onPreviousClick,
       onNextClick,
-      showMobileMenu = true
+      showMobileMenu = true,
     } = this.props;
 
     return (
@@ -103,7 +103,7 @@ export class Menu extends PureComponent {
                 to={`/${MenuOptions.PORTFOLIO}`}
                 className={styles.linksPortfolio}
                 style={{
-                  opacity: currentTab === MenuOptions.PORTFOLIO ? 0.5 : 1
+                  opacity: currentTab === MenuOptions.PORTFOLIO ? 0.5 : 1,
                 }}
               >
                 {MenuOptions.PORTFOLIO}
@@ -144,7 +144,7 @@ export class Menu extends PureComponent {
                 to={`/${MenuOptions.PHOTOGRAPHY}`}
                 className={styles.linksPhotography}
                 style={{
-                  opacity: currentTab === MenuOptions.PHOTOGRAPHY ? 0.5 : 1
+                  opacity: currentTab === MenuOptions.PHOTOGRAPHY ? 0.5 : 1,
                 }}
               >
                 photography
@@ -158,7 +158,7 @@ export class Menu extends PureComponent {
                 currentTab === MenuOptions.PHOTOGRAPHY ||
                 currentTab === MenuOptions.PORTFOLIO
                   ? 1
-                  : 0
+                  : 0,
             }}
           >
             <span onClick={onPreviousClick} className={styles.footerButton}>
