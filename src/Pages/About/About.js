@@ -12,15 +12,15 @@ export class About extends PureComponent {
           <div className={styles.about}>
             <p>Hello,</p>
             <p>
-              My name is Jonathan Bursztyn. I’m a Full Stack Software Engineer
-              in London, UK - currently working at{" "}
+              My name is Jonathan Bursztyn. I’m a Senior UX Engineer in London,
+              UK - currently working at{" "}
               <a
-                href="https://aztec.network/"
+                href="https://consensys.io/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
               >
-                Aztec
+                Consensys
               </a>
               .
             </p>
